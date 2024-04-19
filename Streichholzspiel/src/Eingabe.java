@@ -24,11 +24,11 @@ public class Eingabe {
 
     public static int leseHoelzer(){
         int zahl = leseZahl();
-        if (zahl < 1 || zahl > 3) {
+        if (zahl >= 1 && zahl <= 3) {
+            return zahl;
+        } else {
             Ausgabe.zahlNichtImBereich();
             return leseHoelzer();
-        } else {
-            return zahl;
         }
     }
 
