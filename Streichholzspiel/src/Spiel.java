@@ -1,6 +1,7 @@
 public class Spiel {
 
     private int streichhoelzer;
+    private int gezogeneHoelzer;
 
     public Spiel(int streichhoelzer) {
         this.streichhoelzer = streichhoelzer;
@@ -20,9 +21,6 @@ public class Spiel {
 
     }
 
-    public void computerZiehen() {
-        
-    }
 
     public void menschZiehen() {
         Eingabe eingabe = new Eingabe();
@@ -36,7 +34,28 @@ public class Spiel {
         }
     }
 
-    private void berechneComputerZug() {
-        
+    public void computerZiehen() {
+        berechneComputerZug();
+        streichhoelzer -= gezogeneHoelzer;
+        Ausgabe.computerZug(streichhoelzer, gezogeneHoelzer);
     }
+
+    private void berechneComputerZug() {
+            if (streichhoelzer % 4 == 0 && streichhoelzer != 0) {
+                gezogeneHoelzer = 3;
+            } 
+            else if (streichhoelzer % 4 == 3 && streichhoelzer != 0) {
+                gezogeneHoelzer = 2;
+            } 
+            else if (streichhoelzer % 4 == 2 && streichhoelzer != 0) {
+                gezogeneHoelzer = 1;
+            } 
+            else {
+                if(streichhoelzer != 0){
+                    gezogeneHoelzer = (int) (Math.random() * 3 + 1);
+                    //gezogeneHoelzer = 1;
+                }
+                
+            } 
+        }
 }

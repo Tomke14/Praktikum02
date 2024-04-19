@@ -1,39 +1,47 @@
 public class Ausgabe {
 
     public static void zahlEingeben() {
-        System.out.println("Bitte geben Sie eine Zahl ein: ");
+        System.out.print("Bitte geben Sie eine Zahl ein: ");
     }
 
     public static void keineZahl() {
-        System.out.println("Das ist keine Zahl!");
+        System.out.printf("Das ist keine Zahl!");
+        System.out.println();
     }
 
     public static void zahlNichtImBereich() {
-        System.out.println("Die Zahl ist nicht im Bereich!");
+        System.out.print("Die Zahl ist nicht im Bereich!");
+        System.out.println();
     }
 
     public static void menschGewinnt() {
-        System.out.println("Der Mensch gewinnt!");
+        System.out.print("Der Mensch gewinnt!");
+        System.out.println();
     }
 
     public static void computerGewinnt() {
-        System.out.println("Der Computer gewinnt leider!");
+        System.out.print("Der Computer gewinnt leider!");
+        System.out.println();
     }
 
     public static void zugNichtMoeglich() {
-        System.out.println("Der Zug ist nicht möglich!");
+        System.out.print("Der Zug ist nicht möglich!");
+        System.out.println();
     }
 
     public static void spielstand(int streichhoelzer) {
-        System.out.println("Streichhölzer: " + streichhoelzer);
+        System.out.print("Streichhölzer: " + streichhoelzer);        
+        System.out.println();
     }
 
     public static void menschZug(int streichhoelzer, int gezogeneStreichhoelzer) {
-        System.out.println("Sie ziehen " + gezogeneStreichhoelzer + " Streichhölzer. Es verbleiben " + streichhoelzer + " Streichhölzer.");
+        System.out.print("Sie ziehen " + gezogeneStreichhoelzer + " Streichhölzer. Es verbleiben " + streichhoelzer + " Streichhölzer.");
+        System.out.println();
     }
 
     public static void computerZug(int streichhoelzer, int gezogeneStreichhoelzer) {
-        System.out.println("Der Computer zieht " + gezogeneStreichhoelzer + " Streichhölzer. Es verbleiben " + streichhoelzer + " Streichhölzer.");
+        System.out.print("Der Computer zieht " + gezogeneStreichhoelzer + " Streichhölzer. Es verbleiben " + streichhoelzer + " Streichhölzer.");
+        System.out.println();
     }
 
 
