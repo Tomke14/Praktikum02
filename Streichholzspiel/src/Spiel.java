@@ -52,7 +52,6 @@ public class Spiel {
             else {
                 if(streichhoelzer != 0){
                     gezogeneHoelzer = (int) (Math.random() * 3 + 1);
-                    //gezogeneHoelzer = 1;
                 }
                 
             } 
