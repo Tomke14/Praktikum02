@@ -5,20 +5,19 @@ public class Spiel {
 
     public Spiel(int streichhoelzer) {
         this.streichhoelzer = streichhoelzer;
-
-        while (streichhoelzer > 0) {
+    
+        while (this.streichhoelzer > 0) {
             computerZiehen();
-            if (streichhoelzer <= 0) {
+            if (this.streichhoelzer <= 0) {
                 System.out.println("Der menschliche Spieler hat gewonnen!");
                 break;
             }
             menschZiehen();
-            if (streichhoelzer <= 0) {
+            if (this.streichhoelzer <= 0) {
                 System.out.println("Der Computer hat gewonnen!");
                 break;
             }
         }
-
     }
 
 
