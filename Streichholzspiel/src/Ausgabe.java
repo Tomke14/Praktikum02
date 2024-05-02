@@ -10,12 +10,12 @@ public class Ausgabe {
     }
 
     public static void zahlNichtImBereich() {
-        System.out.print("Die Zahl ist nicht im Bereich!");
+        System.out.print("Die Zahl ist nicht im gültigen Bereich! Die Zahl muss zwischen 1 und 3 liegen.");
         System.out.println();
     }
 
     public static void menschGewinnt() {
-        System.out.print("Der Mensch gewinnt!");
+        System.out.print("Herzlichen Glückwunsch, Sie haben gewonnen!");
         System.out.println();
     }
 
@@ -25,7 +25,7 @@ public class Ausgabe {
     }
 
     public static void zugNichtMoeglich() {
-        System.out.print("Der Zug ist nicht möglich!");
+        System.out.print("Der Zug ist nicht möglich, es liegen zu wenige Streichhölzer auf dem Tisch!");
         System.out.println();
     }
 

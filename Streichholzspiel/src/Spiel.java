@@ -9,12 +9,12 @@ public class Spiel {
         while (this.streichhoelzer > 0) {
             computerZiehen();
             if (this.streichhoelzer <= 0) {
-                System.out.println("Der menschliche Spieler hat gewonnen!");
+                Ausgabe.menschGewinnt();
                 break;
             }
             menschZiehen();
             if (this.streichhoelzer <= 0) {
-                System.out.println("Der Computer hat gewonnen!");
+                Ausgabe.computerGewinnt();
                 break;
             }
         }
